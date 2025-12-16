@@ -23,7 +23,7 @@ def get_successors(state):
             successors.append(tuple(new_state))
     return successors
 
-def solve_dfs(start_state):
+def solve_dls(start_state):
     stack = [(start_state, [])]
     visited = set()
     nodes_visited = 0
