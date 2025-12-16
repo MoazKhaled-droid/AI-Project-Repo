@@ -46,7 +46,8 @@ def solve_bfs(start_state):
             if next_state not in visited:
                 visited.add(next_state)
                 queue.append((next_state, path + [current_state]))
-
+# [(successors1,path1),(successors2,path2),(successors3,path3)]
+#  the new queue if there is only 3 successors 
     return None, nodes_visited, 0
 
 # --- Main Execution ---
@@ -59,7 +60,7 @@ if __name__ == "__main__":
         print(f"Solved! Cost: {len(solution_path) - 1} moves")
         print(f"Visited Nodes: {visited_count}")
         print(f"Time: {time_taken:.4f} seconds")
-        print("\nPath:")
+        print("--- Path ---")
         for s in solution_path:
             print_board(s)
     else:

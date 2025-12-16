@@ -33,7 +33,7 @@ def solve_dfs(start_state):
     start_time = time.time()
 
     while stack:
-        current_state, path = stack.pop() # LIFO
+        current_state, path = stack.pop()
         nodes_visited += 1
 
         if current_state == GOAL_STATE:
@@ -65,6 +65,7 @@ if __name__ == "__main__":
         print(f"Solved! Cost: {len(solution_path) - 1} moves")
         print(f"Visited Nodes: {visited_count}")
         print(f"Time: {time_taken:.4f} seconds")
+        print("--- Path ---")
         for s in solution_path:
             print_board(s)
     else:
