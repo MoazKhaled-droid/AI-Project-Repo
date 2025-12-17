@@ -43,9 +43,9 @@ It covers:
 
 | Algorithm | Completeness | Optimality | Time Complexity | Space Complexity |
 | :--- | :--- | :--- | :--- | :--- |
-| **A* Search** | ✅ Yes | ✅ Yes (Shortest Path) | 🚀 Fast | 🔴 High ($O(b^d)$) |
-| **BFS** | ✅ Yes | ✅ Yes (Shortest Path) | 🐢 Slow | 🔴 High ($O(b^d)$) |
-| **DLS** | ❌ No (Depends on limit) | ❌ No | 🚶 Average | 🟢 Low ($O(b \times l)$) |
+| **A* Search** | ✅ Yes | ✅ Yes (Shortest Path) | 🚀 Fast | 🔴 High (O(b^d)) |
+| **BFS** | ✅ Yes | ✅ Yes (Shortest Path) | 🐢 Slow | 🔴 High (O(b^d)) |
+| **DLS** | ❌ No (Depends on limit) | ❌ No | 🚶 Average | 🟢 Low (O(b \times l)) |
 
 **Conclusion:** **A* Search** is the superior choice for the 8-puzzle problem. It balances the optimality of BFS with execution speed by using the heuristic function to prune irrelevant paths, making it significantly faster than blind search methods.
 
