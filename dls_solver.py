@@ -27,9 +27,9 @@ def solve_dls(start_state):
     stack = [(start_state, [])]
     visited = set()
     nodes_visited = 0
-    MAX_DEPTH = 20  
+    MAX_DEPTH = 15 
 
-    print(f"Running DFS (Max Depth: {MAX_DEPTH})...")
+    print(f"Running DLS (Max Depth: {MAX_DEPTH})...")
     start_time = time.time()
 
     while stack:
@@ -57,9 +57,9 @@ def solve_dls(start_state):
 
 # --- Main Execution ---
 if __name__ == "__main__":
-    initial_state = (1, 2, 3, 4, 6, 8, 7, 5, 0)
+    initial_state = (1, 2, 3, 4, 6, 8, 7, 5, 0) 
     
-    solution_path, visited_count, time_taken = solve_dfs(initial_state)
+    solution_path, visited_count, time_taken = solve_dls(initial_state)
 
     if solution_path:
         print(f"Solved! Cost: {len(solution_path) - 1} moves")

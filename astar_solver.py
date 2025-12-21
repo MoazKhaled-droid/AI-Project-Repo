@@ -65,7 +65,8 @@ def solve_astar(start_state):
 
 # --- Main Execution ---
 if __name__ == "__main__":
-    initial_state = (1, 2, 3, 4, 0, 5, 7, 8, 6)    
+    initial_state = (1, 2, 3, 4, 6, 8, 7, 5, 0)  
+
     solution_path, visited_count, time_taken = solve_astar(initial_state)
 
     if solution_path:

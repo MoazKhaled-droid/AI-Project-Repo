@@ -52,7 +52,7 @@ def solve_bfs(start_state):
 
 # --- Main Execution ---
 if __name__ == "__main__":
-    initial_state = (1, 2, 3, 4, 6, 8, 7, 5, 0)
+    initial_state = (1, 2, 3, 4, 6, 8, 7, 5, 0) 
     
     solution_path, visited_count, time_taken = solve_bfs(initial_state)
 
